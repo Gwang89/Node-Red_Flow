@@ -1,0 +1,4409 @@
+[
+    {
+        "id": "da8d76c681a416ea",
+        "type": "tab",
+        "label": "Flow1:DashBoard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "97e540de74624fef",
+        "type": "tab",
+        "label": "Flow2:thermostat_API",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ad28ad0cb660a148",
+        "type": "tab",
+        "label": "Flow3:Survey",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d15b5e4efc76fedb",
+        "type": "tab",
+        "label": "Flow4:TempProbeDisplay",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5357189b1235db6d",
+        "type": "tab",
+        "label": "Unused] Flow3:Dashboard Feedback",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7360d6e505308f72",
+        "type": "tab",
+        "label": "Unused] UDP Test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4999169af1ef0c90",
+        "type": "tab",
+        "label": "Converter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e8fee03820e441d7",
+        "type": "mqtt-broker",
+        "name": "O3_MQTT_4108262(128878)",
+        "broker": "192.168.2.121",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d72cad1e4deed369",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f4762412fc9babbb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#ff2d2d",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#ff2d2d",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ff2d2d",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ff7979",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#ff2d2d",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "O3 Temperature Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6c936521433e93ed",
+        "type": "ui_tab",
+        "name": "Survey",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5a52fbbdf338af73",
+        "type": "ui_group",
+        "name": "Survey: Type your name and numbers for the answers. ",
+        "tab": "6c936521433e93ed",
+        "order": 4,
+        "disp": true,
+        "width": "13",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2ef00d29047997ac",
+        "type": "ui_group",
+        "name": "Q1: How comfortable are you at this temperature?",
+        "tab": "6c936521433e93ed",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a28dd5c543679e7d",
+        "type": "BACnet-Device",
+        "name": "",
+        "deviceAddress": "192.168.1.111"
+    },
+    {
+        "id": "8be60afbdddefc3d",
+        "type": "ui_link",
+        "name": "enteliCloud Link",
+        "link": "https://demo.entelicloud.com/",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 3
+    },
+    {
+        "id": "c68d51ab30850df9",
+        "type": "ui_tab",
+        "name": "Monitor",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "eee4fdb843e5df45",
+        "type": "ui_group",
+        "name": "O3 Edge (O3-128878/0011, 4108262)",
+        "tab": "c68d51ab30850df9",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "516760f28cbb4c0e",
+        "type": "ui_link",
+        "name": "BCIT Mechatronics",
+        "link": "https://www.bcit.ca/programs/mechatronics-and-robotics-diploma-full-time-7340diplt/",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 4
+    },
+    {
+        "id": "c793ab11ac78adf6",
+        "type": "ui_group",
+        "name": "Q2: How warm clothes are you wearing?",
+        "tab": "6c936521433e93ed",
+        "order": 2,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "59b4ce9b886bc451",
+        "type": "ui_group",
+        "name": "Q3: How extreme activity did you do?",
+        "tab": "6c936521433e93ed",
+        "order": 3,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c784cccd0cad677c",
+        "type": "ui_group",
+        "name": "Thermostat eZNT-Wi (4157001)",
+        "tab": "c68d51ab30850df9",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cef495e9fc463829",
+        "type": "ui_link",
+        "name": "ThingSpeak Public Channel",
+        "link": "https://thingspeak.com/channels/1707497",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 5
+    },
+    {
+        "id": "e612ebc069e83e8a",
+        "type": "ui_group",
+        "name": "Temp Probe, RTD (ADC)",
+        "tab": "c68d51ab30850df9",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "be8848ceac9437dc",
+        "type": "ui_group",
+        "name": "Survey: Type your name and numbers for the answers. ",
+        "tab": "a86334d03e61484d",
+        "order": 4,
+        "disp": true,
+        "width": "13",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a86334d03e61484d",
+        "type": "ui_tab",
+        "name": "Survey",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bcec7b0921b200b5",
+        "type": "mqtt-broker",
+        "name": "O3 edge 2",
+        "broker": "192.168.2.120",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6ecb7ec7815f96f7",
+        "type": "ui_group",
+        "name": "O3 Edge (O3-128878/0016, 4108191)",
+        "tab": "c68d51ab30850df9",
+        "order": 4,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5399f4002142276",
+        "type": "ui_group",
+        "name": "Thermostat eZNT-Wi (4156996)",
+        "tab": "c68d51ab30850df9",
+        "order": 5,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "280f99e6e4ca81e6",
+        "type": "ui_tab",
+        "name": "Converter",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "20caa03d7048c04e",
+        "type": "ui_group",
+        "name": "Vin to Vout, Temp",
+        "tab": "280f99e6e4ca81e6",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "28271ca49c477b3e",
+        "type": "ui_group",
+        "name": "Vout to Temp",
+        "tab": "280f99e6e4ca81e6",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ac6d6b5ec8e19041",
+        "type": "ui_group",
+        "name": "Vout to Temp for LM335",
+        "tab": "280f99e6e4ca81e6",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "adaa0227ebfc09c5",
+        "type": "ui_group",
+        "name": "Temp Probe 2 (LM335,ADC)",
+        "tab": "c68d51ab30850df9",
+        "order": 6,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c2809ed8a9d91099",
+        "type": "ui_spacer",
+        "z": "d15b5e4efc76fedb",
+        "name": "spacer",
+        "group": "c784cccd0cad677c",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b47da2e054d2372b",
+        "type": "ui_spacer",
+        "z": "d15b5e4efc76fedb",
+        "name": "spacer",
+        "group": "e612ebc069e83e8a",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "ca0594272722db90",
+        "type": "ui_spacer",
+        "z": "d15b5e4efc76fedb",
+        "name": "spacer",
+        "group": "6ecb7ec7815f96f7",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "3277f86fe6e0a944",
+        "type": "ui_spacer",
+        "z": "d15b5e4efc76fedb",
+        "name": "spacer",
+        "group": "a5399f4002142276",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "2cc4ca41f2a47fc0",
+        "type": "ui_spacer",
+        "z": "d15b5e4efc76fedb",
+        "name": "spacer",
+        "group": "adaa0227ebfc09c5",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "db31c7112c1fa2a5",
+        "type": "ui_chart",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "group": "eee4fdb843e5df45",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Graph of Occupant Temperature ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "waiting",
+        "dot": true,
+        "ymin": "15",
+        "ymax": "30",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 760,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6498344ee060beb5",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "topic": "events/object/internalTemperature",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "e8fee03820e441d7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "604c25f164abb4e5"
+            ]
+        ]
+    },
+    {
+        "id": "604c25f164abb4e5",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8214b379d5b317d0",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "topic": "events/object/irTemperature",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "e8fee03820e441d7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 280,
+        "wires": [
+            [
+                "4a5aff4f8dafbf4f",
+                "1409aa5c09ff9153"
+            ]
+        ]
+    },
+    {
+        "id": "a00c777b68a3fb57",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "topic": "events/object/occupantTemperature",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "e8fee03820e441d7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "0f6e81a764bb4874",
+                "24d1adf0edce3d5d",
+                "b782f2ac9393eda2"
+            ]
+        ]
+    },
+    {
+        "id": "4a5aff4f8dafbf4f",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "irTemperature Value",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.Present_Value",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0f6e81a764bb4874",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "occupantTemperature value",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.Present_Value",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b782f2ac9393eda2",
+        "type": "function",
+        "z": "da8d76c681a416ea",
+        "name": "occuTemp Value",
+        "func": "msg.payload = msg.payload.Present_Value\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "db31c7112c1fa2a5",
+                "437e316c5aa17f37"
+            ]
+        ]
+    },
+    {
+        "id": "24d1adf0edce3d5d",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "occupantTemperature time",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.updated",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1409aa5c09ff9153",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "irTemperature time",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.updated",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "437e316c5aa17f37",
+        "type": "ui_gauge",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "group": "eee4fdb843e5df45",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Occupant Temperature Gauge",
+        "label": "[℃]",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "40",
+        "colors": [
+            "#0d37ff",
+            "#00e617",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 750,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ddd7a78974d55f83",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "432ce45924109281",
+        "type": "comment",
+        "z": "da8d76c681a416ea",
+        "name": "O3 MQTT broker publishes topics",
+        "info": "",
+        "x": 160,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1915c35894bb2304",
+        "type": "function",
+        "z": "da8d76c681a416ea",
+        "name": "occuTemp time updated",
+        "func": "// this code is to display current time as reference\n// get the time data\nvar d=new Date();\nvar day=d.getDate();\nvar month=d.getMonth() + 1;\nvar year=d.getFullYear();\nvar hours=d.getHours() //the hour (0-23)\nvar minutes=d.getMinutes() //-the minute (0-59)\nvar seconds=d.getSeconds() //-the seconds (0-59)\n\n// changing time (UTC to PST)\n//hours = hours - 7// daylight savings... \n\n// combine it\nmsg.payload = day+ \" \"+ month +\" \"+ year + \" \"+hours + \":\" + minutes + \":\" + seconds;\n\n// return time data (string)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "ddd7a78974d55f83",
+                "d7de0e33747dfeed"
+            ]
+        ]
+    },
+    {
+        "id": "a47c53a9520c33b7",
+        "type": "inject",
+        "z": "da8d76c681a416ea",
+        "name": "Timer 1 sec interval",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "1915c35894bb2304"
+            ]
+        ]
+    },
+    {
+        "id": "a7aa667ab9213828",
+        "type": "comment",
+        "z": "da8d76c681a416ea",
+        "name": "Present Time in Network",
+        "info": "",
+        "x": 130,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d7de0e33747dfeed",
+        "type": "ui_text",
+        "z": "da8d76c681a416ea",
+        "group": "eee4fdb843e5df45",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Present Time in Network",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 630,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0eff6768c7187bc1",
+        "type": "inject",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9fe78dddc7aeacb",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "topic": "events/object/combinedOccupancy",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "e8fee03820e441d7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 380,
+        "wires": [
+            [
+                "69096237cda1cdf0"
+            ]
+        ]
+    },
+    {
+        "id": "69096237cda1cdf0",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b59381ca704dda38",
+        "type": "ping",
+        "z": "da8d76c681a416ea",
+        "d": true,
+        "protocol": "IPv4",
+        "mode": "timed",
+        "name": "",
+        "host": "192.168.2.121",
+        "timer": "60",
+        "inputs": 0,
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "781c7a6b306ecb6f"
+            ]
+        ]
+    },
+    {
+        "id": "781c7a6b306ecb6f",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "09984438d428fd16",
+        "type": "ui_chart",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "group": "6ecb7ec7815f96f7",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Graph of Occupant Temperature ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "waiting",
+        "dot": true,
+        "ymin": "15",
+        "ymax": "30",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 750,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c63307dc2403e79b",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "d": true,
+        "name": "",
+        "topic": "events/object/internalTemperature",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "bcec7b0921b200b5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 1040,
+        "wires": [
+            [
+                "648e12d9a70ba848"
+            ]
+        ]
+    },
+    {
+        "id": "648e12d9a70ba848",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "9bf8bf2a8dee78a3",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "d": true,
+        "name": "",
+        "topic": "events/object/irTemperature",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "bcec7b0921b200b5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1000,
+        "wires": [
+            [
+                "3cc1be0ea3234141",
+                "03d1c8d777b631b0"
+            ]
+        ]
+    },
+    {
+        "id": "da21d262ebc61d3d",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "topic": "events/object/occupantTemperature",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "bcec7b0921b200b5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 960,
+        "wires": [
+            [
+                "ca6286cf1446c33e",
+                "431e3275ef49d1bf",
+                "dd1e4e104c9b52a2"
+            ]
+        ]
+    },
+    {
+        "id": "3cc1be0ea3234141",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "irTemperature Value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.Present_Value",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "ca6286cf1446c33e",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "occupantTemperature value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.Present_Value",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "dd1e4e104c9b52a2",
+        "type": "function",
+        "z": "da8d76c681a416ea",
+        "name": "occuTemp Value",
+        "func": "msg.payload = msg.payload.Present_Value\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 800,
+        "wires": [
+            [
+                "09984438d428fd16",
+                "8383ca8a65e2558f"
+            ]
+        ]
+    },
+    {
+        "id": "431e3275ef49d1bf",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "occupantTemperature time",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.updated",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "03d1c8d777b631b0",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "irTemperature time",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.updated",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "8383ca8a65e2558f",
+        "type": "ui_gauge",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "group": "6ecb7ec7815f96f7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Occupant Temperature Gauge",
+        "label": "[℃]",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "40",
+        "colors": [
+            "#0d37ff",
+            "#00e617",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 740,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "ee4c09e9c69424fa",
+        "type": "comment",
+        "z": "da8d76c681a416ea",
+        "name": "O3 MQTT broker publishes topics",
+        "info": "",
+        "x": 150,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "247b723633e71d50",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "d": true,
+        "name": "",
+        "topic": "events/object/#",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "bcec7b0921b200b5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1100,
+        "wires": [
+            [
+                "a921e8aea17d0a94"
+            ]
+        ]
+    },
+    {
+        "id": "a921e8aea17d0a94",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "9af117dbf882c57e",
+        "type": "ping",
+        "z": "da8d76c681a416ea",
+        "d": true,
+        "protocol": "IPv4",
+        "mode": "timed",
+        "name": "",
+        "host": "192.168.2.121",
+        "timer": "60",
+        "inputs": 0,
+        "x": 120,
+        "y": 1360,
+        "wires": [
+            [
+                "80a630a47ba7ae63"
+            ]
+        ]
+    },
+    {
+        "id": "80a630a47ba7ae63",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "3541b0f40553e5e8",
+        "type": "comment",
+        "z": "da8d76c681a416ea",
+        "name": "O3 edge 4108262",
+        "info": "",
+        "x": 110,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "88c1b360fa1e1c54",
+        "type": "comment",
+        "z": "da8d76c681a416ea",
+        "name": "O3 edge ",
+        "info": "",
+        "x": 80,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "725deb47b0e355b2",
+        "type": "mqtt in",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "topic": "events/object/combinedOccupancy",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "bcec7b0921b200b5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 1160,
+        "wires": [
+            [
+                "7b9aba24579323d2"
+            ]
+        ]
+    },
+    {
+        "id": "7b9aba24579323d2",
+        "type": "debug",
+        "z": "da8d76c681a416ea",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "c1293044ef5b5f27",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/auth/basiclogin?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "adab519ba63b771a"
+            ]
+        ]
+    },
+    {
+        "id": "adab519ba63b771a",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "authentification",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "49fc262aa7798c37",
+        "type": "inject",
+        "z": "97e540de74624fef",
+        "name": "30 Seconds Timer",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "time",
+                "v": "$now('[Y0001].[M01].[D01] [H01]:[m01]:[s01]', '-0700')",
+                "vt": "jsonata"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "c1293044ef5b5f27",
+                "35c3ea02dcec06ec",
+                "3b64539e51b2922d",
+                "ab8a615fc29a4503",
+                "099eb6666ebc52df",
+                "00e704d05256e6ea",
+                "c7be10027d07550c",
+                "020f83caa1b5b755",
+                "b58812ad79341c67"
+            ]
+        ]
+    },
+    {
+        "id": "35c3ea02dcec06ec",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "d": true,
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/.info?alt=json ",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 360,
+        "wires": [
+            [
+                "43c0b6702e8a5616"
+            ]
+        ]
+    },
+    {
+        "id": "43c0b6702e8a5616",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "info",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3b64539e51b2922d",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "d": true,
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/.info/software-version?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "17a0481dd36c4317"
+            ]
+        ]
+    },
+    {
+        "id": "17a0481dd36c4317",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "software version",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ab8a615fc29a4503",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "d": true,
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/user/?alt=json ",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "b8ae597234993386"
+            ]
+        ]
+    },
+    {
+        "id": "b8ae597234993386",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "user",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "099eb6666ebc52df",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "d": true,
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/.bacnet?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "4e02f7c2d733d110"
+            ]
+        ]
+    },
+    {
+        "id": "4e02f7c2d733d110",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "bacnet",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "00e704d05256e6ea",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/.bacnet/BCIT O3?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "9820b851457f59a5"
+            ]
+        ]
+    },
+    {
+        "id": "9820b851457f59a5",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "bacnet/BCIT O3 (mainSite)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "c7be10027d07550c",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/.bacnet/BCIT O3/4157001?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 560,
+        "wires": [
+            [
+                "a461aafacd1f4d8b"
+            ]
+        ]
+    },
+    {
+        "id": "a461aafacd1f4d8b",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "bacnet/BCIT O3/eZNT Thermostat",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "020f83caa1b5b755",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/.bacnet/BCIT O3/4157001/analog-input,1?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 600,
+        "wires": [
+            [
+                "1edca82aac09c8fd",
+                "60c9d9ba6531ab51"
+            ]
+        ]
+    },
+    {
+        "id": "1edca82aac09c8fd",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "analog-input,1 (AI1, temperature)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a064fb9e7d57c8f4",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "temperature present value",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "60c9d9ba6531ab51",
+        "type": "function",
+        "z": "97e540de74624fef",
+        "name": "accessing \"present-value\"",
+        "func": "msg.payload = msg.payload[\"present-value\"][\"value\"];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 660,
+        "wires": [
+            [
+                "a064fb9e7d57c8f4",
+                "3af2f0b357d00515"
+            ]
+        ]
+    },
+    {
+        "id": "eb34deec33e038f9",
+        "type": "json",
+        "z": "97e540de74624fef",
+        "d": true,
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 410,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dfda35aa293996e5",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "temperature present value JSON",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "b61f1aaf6fb65ac8",
+        "type": "comment",
+        "z": "97e540de74624fef",
+        "name": "Accessing enteliCloud using HTTPS API ",
+        "info": "",
+        "x": 180,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b58812ad79341c67",
+        "type": "function",
+        "z": "97e540de74624fef",
+        "d": true,
+        "name": "stamping time now",
+        "func": "msg.payload = msg.time; \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 780,
+        "wires": [
+            [
+                "2c5b5c938aecd3e8"
+            ]
+        ]
+    },
+    {
+        "id": "2c5b5c938aecd3e8",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "time now UTC-7 (PST)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "89000a3d16517585",
+        "type": "ui_gauge",
+        "z": "97e540de74624fef",
+        "name": "",
+        "group": "c784cccd0cad677c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Room Temperature Gauge",
+        "label": "[℃]",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "40",
+        "colors": [
+            "#0d37ff",
+            "#00e617",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 700,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "4e73b29e0d971f23",
+        "type": "ui_chart",
+        "z": "97e540de74624fef",
+        "name": "",
+        "group": "c784cccd0cad677c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Graph of Room Temperature ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "waiting",
+        "dot": true,
+        "ymin": "15",
+        "ymax": "30",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 700,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3af2f0b357d00515",
+        "type": "change",
+        "z": "97e540de74624fef",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 720,
+        "wires": [
+            [
+                "dfda35aa293996e5",
+                "89000a3d16517585",
+                "4e73b29e0d971f23"
+            ]
+        ]
+    },
+    {
+        "id": "d5aa2dee77720de3",
+        "type": "ping",
+        "z": "97e540de74624fef",
+        "d": true,
+        "protocol": "IPv4",
+        "mode": "timed",
+        "name": "",
+        "host": "192.168.2.150",
+        "timer": "60",
+        "inputs": 0,
+        "x": 130,
+        "y": 1020,
+        "wires": [
+            [
+                "1287109b61e1f151"
+            ]
+        ]
+    },
+    {
+        "id": "1287109b61e1f151",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "509a460f1d82bd97",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/auth/basiclogin?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 1180,
+        "wires": [
+            [
+                "0c03e728ebe51137"
+            ]
+        ]
+    },
+    {
+        "id": "0c03e728ebe51137",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "authentification",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "72ded4aaafab2a20",
+        "type": "inject",
+        "z": "97e540de74624fef",
+        "name": "30 Seconds Timer",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "time",
+                "v": "$now('[Y0001].[M01].[D01] [H01]:[m01]:[s01]', '-0700')",
+                "vt": "jsonata"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1180,
+        "wires": [
+            [
+                "509a460f1d82bd97",
+                "d5e7a0f0398507f3",
+                "dd5ad38129aebbcf"
+            ]
+        ]
+    },
+    {
+        "id": "d5e7a0f0398507f3",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/.bacnet/BCIT O3/4156996?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 1240,
+        "wires": [
+            [
+                "0d5c2e27fdceabd9"
+            ]
+        ]
+    },
+    {
+        "id": "0d5c2e27fdceabd9",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "bacnet/BCIT O3/eZNT Thermostat",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "dd5ad38129aebbcf",
+        "type": "http request",
+        "z": "97e540de74624fef",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://demo.entelicloud.com/enteliweb/api/.bacnet/BCIT O3/4156996/analog-input,1?alt=json",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 390,
+        "y": 1300,
+        "wires": [
+            [
+                "a200be163e839b89",
+                "d89f3b1e2d5d4afe"
+            ]
+        ]
+    },
+    {
+        "id": "a200be163e839b89",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "analog-input,1 (AI1, temperature)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "e74a2223f28b77fa",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "temperature present value",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "d89f3b1e2d5d4afe",
+        "type": "function",
+        "z": "97e540de74624fef",
+        "name": "accessing \"present-value\"",
+        "func": "msg.payload = msg.payload[\"present-value\"][\"value\"];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1380,
+        "wires": [
+            [
+                "e74a2223f28b77fa",
+                "f57ab982b0c5c81a"
+            ]
+        ]
+    },
+    {
+        "id": "9cd21aecfe26ffd8",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "temperature present value JSON",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "acc4902c9775b950",
+        "type": "comment",
+        "z": "97e540de74624fef",
+        "name": "Accessing enteliCloud using HTTPS API ",
+        "info": "",
+        "x": 180,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "e26d0fee84a92114",
+        "type": "debug",
+        "z": "97e540de74624fef",
+        "name": "time now UTC-7 (PST)",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "ba8924a9f4326d23",
+        "type": "ui_gauge",
+        "z": "97e540de74624fef",
+        "name": "",
+        "group": "a5399f4002142276",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Room Temperature Gauge",
+        "label": "[℃]",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "40",
+        "colors": [
+            "#0d37ff",
+            "#00e617",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 700,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "7fd58f0e4ba25f26",
+        "type": "ui_chart",
+        "z": "97e540de74624fef",
+        "name": "",
+        "group": "a5399f4002142276",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Graph of Room Temperature ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "waiting",
+        "dot": true,
+        "ymin": "15",
+        "ymax": "30",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 700,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f57ab982b0c5c81a",
+        "type": "change",
+        "z": "97e540de74624fef",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 1440,
+        "wires": [
+            [
+                "9cd21aecfe26ffd8",
+                "ba8924a9f4326d23",
+                "7fd58f0e4ba25f26"
+            ]
+        ]
+    },
+    {
+        "id": "b6737a26c9069a05",
+        "type": "comment",
+        "z": "97e540de74624fef",
+        "name": "Thermostat eZNT 4157001",
+        "info": "",
+        "x": 130,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "81df1ccfb401bfdd",
+        "type": "comment",
+        "z": "97e540de74624fef",
+        "name": "Thermostat eZNT 4156996",
+        "info": "",
+        "x": 130,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "04b2139984109d7d",
+        "type": "ui_form",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "label": "",
+        "group": "be8848ceac9437dc",
+        "order": 1,
+        "width": "13",
+        "height": "8",
+        "options": [
+            {
+                "label": "OccupantName",
+                "value": "OccupantName",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "ClothingThickness(1-5: 1 = thin, 5 = thick)",
+                "value": "ClothingThickness",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "ActivityIntensity(1-5 : 1 = easy, 5 = extreme)",
+                "value": "ActivityIntensity",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Comfortable(1-5: 1 = cold, 5 = hot)",
+                "value": "Comfortable",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Comment",
+                "value": "Comment",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "OccupantName": "",
+            "ClothingThickness": "",
+            "ActivityIntensity": "",
+            "Comfortable": "",
+            "Comment": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "66732574b239c010",
+                "666fda90d1c963d5"
+            ]
+        ]
+    },
+    {
+        "id": "4ca30ee39f39c349",
+        "type": "comment",
+        "z": "ad28ad0cb660a148",
+        "name": "Dashboard Survey",
+        "info": "",
+        "x": 110,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "66732574b239c010",
+        "type": "debug",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1bf860baf1a7c150",
+        "type": "udp out",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "addr": "localhost",
+        "iface": "",
+        "port": "33333",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 1060,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a185c53c9c991825",
+        "type": "json",
+        "z": "ad28ad0cb660a148",
+        "d": true,
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 870,
+        "y": 120,
+        "wires": [
+            [
+                "65a7da9c3c24c08e",
+                "1bf860baf1a7c150"
+            ]
+        ]
+    },
+    {
+        "id": "65a7da9c3c24c08e",
+        "type": "debug",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2292833d213ad8d2",
+        "type": "file",
+        "z": "ad28ad0cb660a148",
+        "name": "writing csv file I/O",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1070,
+        "y": 280,
+        "wires": [
+            [
+                "833faeac1ff30ed2",
+                "3eb17f3ccb7dd3a7"
+            ]
+        ]
+    },
+    {
+        "id": "833faeac1ff30ed2",
+        "type": "ui_toast",
+        "z": "ad28ad0cb660a148",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1290,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "98a5e34ec3377f64",
+        "type": "csv",
+        "z": "ad28ad0cb660a148",
+        "name": "csv",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": false,
+        "x": 770,
+        "y": 220,
+        "wires": [
+            [
+                "6007f20c0bd0938e"
+            ]
+        ]
+    },
+    {
+        "id": "666fda90d1c963d5",
+        "type": "change",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.time",
+                "pt": "msg",
+                "to": "$now()",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "441e04f2eb2d681a",
+                "e4b019f9e77122ac"
+            ]
+        ]
+    },
+    {
+        "id": "8a77337804427e96",
+        "type": "debug",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "441e04f2eb2d681a",
+        "type": "function",
+        "z": "ad28ad0cb660a148",
+        "name": "systemTime",
+        "func": "// this code is to display current time as reference\n// get the time data\nvar d=new Date();\nvar day=d.getDate();\nvar month=d.getMonth() + 1;\nvar year=d.getFullYear();\nvar hours=d.getHours() //the hour (0-23)\nvar minutes=d.getMinutes() //-the minute (0-59)\nvar seconds=d.getSeconds() //-the seconds (0-59)\n\n// changing time (UTC to PST)\n//hours = hours - 7// daylight savings... \n\n// combine it\nmsg.payload.time = year+ \"-\"+ month +\"-\"+ day + \" \"+hours + \":\" + minutes + \":\" + seconds;\n\n// return time data (string)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "8a77337804427e96",
+                "98a5e34ec3377f64"
+            ]
+        ]
+    },
+    {
+        "id": "3eb17f3ccb7dd3a7",
+        "type": "debug",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c7f214aaf73036b7",
+        "type": "csv",
+        "z": "ad28ad0cb660a148",
+        "d": true,
+        "name": "csv",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "dbed43e868ccf8f8"
+            ]
+        ]
+    },
+    {
+        "id": "dbed43e868ccf8f8",
+        "type": "debug",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5094c46627143499",
+        "type": "inject",
+        "z": "ad28ad0cb660a148",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"OccupantName\":\"OccupantName\",\"ClothingThickness\":\"ClothingThickness\",\"ActivityIntensity\":\"ActivityIntensity\",\"Comfortable\":\"Comfortable\",\"Comment\":\"Comment\",\"Time\":\"Time\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "c7f214aaf73036b7"
+            ]
+        ]
+    },
+    {
+        "id": "6007f20c0bd0938e",
+        "type": "function",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "func": "var d=new Date();\nvar day=d.getDate();\nvar month=d.getMonth() + 1;\nvar year=d.getFullYear();\nvar hours=d.getHours() //the hour (0-23)\nvar minutes=d.getMinutes() //-the minute (0-59)\nvar seconds=d.getSeconds() //-the seconds (0-59)\n\n\n//SurveyHistory1.csv\nvar fileDirectory = \"/home/pi/Desktop/SurveyHistory/\";\n\n//\"C:\\\\Users\\\\GwangSik\\\\Desktop\\\\O3_Project\\\\느시\";\nvar fileNameMaker = 0;\nif (month < 10){\n    if (day > 10){\n        fileNameMaker = \"SurveyHistory_\" + year + \"-0\" + month +\"-\"+ day +\".csv\";\n    }\n    else{\n        fileNameMaker = \"SurveyHistory_\" + year + \"-0\" + month +\"-0\"+ day +\".csv\";\n\n    }\n}\nelse{\n    if (day > 10){\n        fileNameMaker = \"SurveyHistory_\" + year + \"-0\" + month +\"-\"+ day +\".csv\";\n    }\n    else{\n        fileNameMaker = \"SurveyHistory_\" + year + \"-0\" + month +\"-0\"+ day +\".csv\";\n\n    }\n}\n\nmsg.filename = fileDirectory + fileNameMaker;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 280,
+        "wires": [
+            [
+                "2292833d213ad8d2",
+                "45ee228783eccee0"
+            ]
+        ]
+    },
+    {
+        "id": "45ee228783eccee0",
+        "type": "debug",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5ddad4710b7564ba",
+        "type": "comment",
+        "z": "ad28ad0cb660a148",
+        "name": "file I/O to create CSV ",
+        "info": "",
+        "x": 640,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9adf9a3e0c0a636d",
+        "type": "debug",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a269226a1b960888",
+        "type": "http request",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 790,
+        "y": 540,
+        "wires": [
+            [
+                "7a6cf993ad36e3b3"
+            ]
+        ]
+    },
+    {
+        "id": "7a6cf993ad36e3b3",
+        "type": "debug",
+        "z": "ad28ad0cb660a148",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e4b019f9e77122ac",
+        "type": "function",
+        "z": "ad28ad0cb660a148",
+        "name": "thingSpeak Write API",
+        "func": "var survey1 = msg.payload.ClothingThickness;\nvar survey2 = msg.payload.ActivityIntensity;\nvar survey3 = msg.payload.Comfortable; \n\nmsg.url = \"https://api.thingspeak.com/update?api_key=5Y7ZSYFYYW5I2KTL&field6=\" + survey1 + \"&field7=\"+survey2 + \"&field8=\" +survey3; \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 540,
+        "wires": [
+            [
+                "a269226a1b960888"
+            ]
+        ]
+    },
+    {
+        "id": "78780c1be187cc9d",
+        "type": "comment",
+        "z": "ad28ad0cb660a148",
+        "name": "thingSpeak Write API > field 6,7,8",
+        "info": "",
+        "x": 610,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "2d7d3a2ca318b905",
+        "type": "udp in",
+        "z": "d15b5e4efc76fedb",
+        "name": "UDP IN",
+        "iface": "192.168.1.111",
+        "port": "33334",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "192.168.1.111",
+        "datatype": "utf8",
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "b19114497d2f90fd",
+                "be7b9e1a3c2d4a49"
+            ]
+        ]
+    },
+    {
+        "id": "b19114497d2f90fd",
+        "type": "debug",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "dfd028544b5fe2a7",
+        "type": "ui_gauge",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "group": "e612ebc069e83e8a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp Probe Temperature Gauge",
+        "label": "[℃]",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "40",
+        "colors": [
+            "#0d37ff",
+            "#00e617",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 520,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "eeaf1949067cbdbc",
+        "type": "ui_chart",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "group": "e612ebc069e83e8a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Graph of Probe Temperature ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "waiting",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 520,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f94c214d921d1839",
+        "type": "comment",
+        "z": "d15b5e4efc76fedb",
+        "name": "Pi sending a data of Probe Temp",
+        "info": "",
+        "x": 190,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "be7b9e1a3c2d4a49",
+        "type": "change",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "91393ea9b739c0b0",
+                "dfd028544b5fe2a7",
+                "eeaf1949067cbdbc"
+            ]
+        ]
+    },
+    {
+        "id": "91393ea9b739c0b0",
+        "type": "debug",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "95f12010170a9c93",
+        "type": "udp in",
+        "z": "d15b5e4efc76fedb",
+        "name": "UDP IN",
+        "iface": "192.168.1.111",
+        "port": "33335",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "192.168.1.111",
+        "datatype": "utf8",
+        "x": 190,
+        "y": 560,
+        "wires": [
+            [
+                "9167c871f7b03b08",
+                "fd392cefc54e8947"
+            ]
+        ]
+    },
+    {
+        "id": "9167c871f7b03b08",
+        "type": "debug",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a3d4d6fe84fa043d",
+        "type": "ui_gauge",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "group": "adaa0227ebfc09c5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp Probe Temperature Gauge",
+        "label": "[℃]",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "40",
+        "colors": [
+            "#0d37ff",
+            "#00e617",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "30",
+        "className": "",
+        "x": 540,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ef22158fe7832385",
+        "type": "ui_chart",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "group": "adaa0227ebfc09c5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Graph of Probe Temperature ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "waiting",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 540,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8364b7fd6ed4402",
+        "type": "comment",
+        "z": "d15b5e4efc76fedb",
+        "name": "Pi sending a data of Probe Temp",
+        "info": "",
+        "x": 210,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "fd392cefc54e8947",
+        "type": "change",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 740,
+        "wires": [
+            [
+                "5dd9c3b1e2e4418d",
+                "a3d4d6fe84fa043d",
+                "ef22158fe7832385"
+            ]
+        ]
+    },
+    {
+        "id": "5dd9c3b1e2e4418d",
+        "type": "debug",
+        "z": "d15b5e4efc76fedb",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "cd28fe437a4232a4",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "2ef00d29047997ac",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "I am sweating",
+        "tooltip": "",
+        "color": "White",
+        "bgcolor": "Red",
+        "className": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "num",
+        "topic": "feel",
+        "topicType": "global",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "9403d21392066603",
+                "5f149b904a616a0a"
+            ]
+        ]
+    },
+    {
+        "id": "5ec0bd76a0b5d289",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "2ef00d29047997ac",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "I am good now",
+        "tooltip": "",
+        "color": "White",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "num",
+        "topic": "feel",
+        "topicType": "global",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "3becf63a3ba723d8",
+                "9403d21392066603"
+            ]
+        ]
+    },
+    {
+        "id": "868eeb9434e75fed",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "2ef00d29047997ac",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "I am cold",
+        "tooltip": "",
+        "color": "White",
+        "bgcolor": "Blue",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "feel",
+        "topicType": "global",
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "0286f4563f8f83f5",
+                "9403d21392066603"
+            ]
+        ]
+    },
+    {
+        "id": "3becf63a3ba723d8",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 130,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0286f4563f8f83f5",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 130,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "65058ce70c25199d",
+        "type": "comment",
+        "z": "5357189b1235db6d",
+        "name": "Dashboard buttons",
+        "info": "",
+        "x": 130,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "369b5d4b3c3d8e22",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6427627cb7c4bdb5",
+        "type": "change",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "comfortable",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 100,
+        "wires": [
+            [
+                "369b5d4b3c3d8e22"
+            ]
+        ]
+    },
+    {
+        "id": "87dff02d4a7f1215",
+        "type": "change",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "time",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "a00911e54eb3fe7a"
+            ]
+        ]
+    },
+    {
+        "id": "a00911e54eb3fe7a",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d2ba6429a950fa8d",
+        "type": "function",
+        "z": "5357189b1235db6d",
+        "name": "occuTemp time updated",
+        "func": "// this code is to display current time as reference\n// get the time data\nvar d=new Date();\nvar day=d.getDate();\nvar month=d.getMonth() + 1;\nvar year=d.getFullYear();\nvar hours=d.getHours() //the hour (0-23)\nvar minutes=d.getMinutes() //-the minute (0-59)\nvar seconds=d.getSeconds() //-the seconds (0-59)\n\n// changing time (UTC to PST)\n//hours = hours - 7// daylight savings... \n\n// combine it\nmsg.payload = day+ \" \"+ month +\" \"+ year + \" \"+hours + \":\" + minutes + \":\" + seconds;\n\n// return time data (string)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "b4aff7aa544a0152",
+                "87dff02d4a7f1215"
+            ]
+        ]
+    },
+    {
+        "id": "b4aff7aa544a0152",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9403d21392066603",
+        "type": "delay",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "6427627cb7c4bdb5",
+                "d2ba6429a950fa8d"
+            ]
+        ]
+    },
+    {
+        "id": "5f149b904a616a0a",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 130,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4257afe7e578ce57",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8ddae00a0dc5abfc",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 130,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "d454a07c3b079cf7",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "c793ab11ac78adf6",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "thin",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "blue",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 640,
+        "wires": [
+            [
+                "8ddae00a0dc5abfc",
+                "a8b54e720e80da1d"
+            ]
+        ]
+    },
+    {
+        "id": "1a14909dc216552a",
+        "type": "change",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "clothes",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8b54e720e80da1d",
+        "type": "delay",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 700,
+        "wires": [
+            [
+                "1a14909dc216552a"
+            ]
+        ]
+    },
+    {
+        "id": "d1a690021888939c",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "c793ab11ac78adf6",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "medium",
+        "tooltip": "",
+        "color": "White",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 740,
+        "wires": [
+            [
+                "8cb56a46f81b703b",
+                "a8b54e720e80da1d"
+            ]
+        ]
+    },
+    {
+        "id": "8cb56a46f81b703b",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 130,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "43c25fad0c8a46a4",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "c793ab11ac78adf6",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Thick",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "Red",
+        "className": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 840,
+        "wires": [
+            [
+                "a199aa17733df546",
+                "a8b54e720e80da1d"
+            ]
+        ]
+    },
+    {
+        "id": "a199aa17733df546",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 130,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "0e4df01bbfbf94bf",
+        "type": "comment",
+        "z": "5357189b1235db6d",
+        "name": "Dashboard How thick clothing",
+        "info": "",
+        "x": 140,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "6da9b68e288d9503",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "048732c7e7933e7c",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "59b4ce9b886bc451",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Easy",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "blue",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 980,
+        "wires": [
+            [
+                "6da9b68e288d9503",
+                "2d2d85a37aea36ae"
+            ]
+        ]
+    },
+    {
+        "id": "89ed008c6bb4ae58",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "59b4ce9b886bc451",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "medium",
+        "tooltip": "",
+        "color": "White",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 1080,
+        "wires": [
+            [
+                "ac3a22566dd7d8ad",
+                "2d2d85a37aea36ae"
+            ]
+        ]
+    },
+    {
+        "id": "ac3a22566dd7d8ad",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "7b84c373423ffd55",
+        "type": "ui_button",
+        "z": "5357189b1235db6d",
+        "d": true,
+        "name": "",
+        "group": "59b4ce9b886bc451",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Crazy",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "Red",
+        "className": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1180,
+        "wires": [
+            [
+                "3570979b4aa38bdb",
+                "2d2d85a37aea36ae"
+            ]
+        ]
+    },
+    {
+        "id": "3570979b4aa38bdb",
+        "type": "debug",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "1116c50c1bc1e2af",
+        "type": "comment",
+        "z": "5357189b1235db6d",
+        "name": "Dashboard How extreme activity did you do?",
+        "info": "",
+        "x": 210,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "2d2d85a37aea36ae",
+        "type": "delay",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 960,
+        "wires": [
+            [
+                "b272a629b2f69e0a"
+            ]
+        ]
+    },
+    {
+        "id": "b272a629b2f69e0a",
+        "type": "change",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "activity",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3938d24d1f32395d",
+        "type": "join",
+        "z": "5357189b1235db6d",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "20",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 770,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4bc0726422fe105",
+        "type": "udp in",
+        "z": "7360d6e505308f72",
+        "d": true,
+        "name": "UDP IN",
+        "iface": "192.168.1.111",
+        "port": "33333",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "192.168.1.111",
+        "datatype": "utf8",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "3ab9cae3d20c026c"
+            ]
+        ]
+    },
+    {
+        "id": "3ab9cae3d20c026c",
+        "type": "debug",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3ef57c69e1730986",
+        "type": "inject",
+        "z": "7360d6e505308f72",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "a7afa61f2bedb8aa"
+            ]
+        ]
+    },
+    {
+        "id": "3da8359a1041bd4a",
+        "type": "udp out",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "addr": "localhost",
+        "iface": "",
+        "port": "33333",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 620,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "a7afa61f2bedb8aa",
+        "type": "change",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " $now('[D01].[M01].[Y0001] [H01]:[m01]:[s01]', '-0700')",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "ce12ceaa999b5f8c",
+                "3da8359a1041bd4a"
+            ]
+        ]
+    },
+    {
+        "id": "ce12ceaa999b5f8c",
+        "type": "debug",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "71c20e225d6e55fa",
+        "type": "comment",
+        "z": "7360d6e505308f72",
+        "name": "UDP TEST - TimeStamp",
+        "info": "",
+        "x": 170,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8555a88b0acf45f7",
+        "type": "udp in",
+        "z": "7360d6e505308f72",
+        "d": true,
+        "name": "UDP IN",
+        "iface": "192.168.1.111",
+        "port": "33334",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "192.168.1.111",
+        "datatype": "utf8",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "3ff6c718cc93049e",
+                "2695ed6a20ab8371"
+            ]
+        ]
+    },
+    {
+        "id": "3ff6c718cc93049e",
+        "type": "debug",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9ac698f51674dc56",
+        "type": "comment",
+        "z": "7360d6e505308f72",
+        "name": "UDP TEST - from Python",
+        "info": "",
+        "x": 170,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "cb5fc16b237d9131",
+        "type": "udp out",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "addr": "localhost",
+        "iface": "",
+        "port": "33333",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 560,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d0f2daeea821608a",
+        "type": "debug",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e590ad779566e8c0",
+        "type": "delay",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 540,
+        "wires": [
+            [
+                "d0f2daeea821608a",
+                "cb5fc16b237d9131"
+            ]
+        ]
+    },
+    {
+        "id": "e040763071592527",
+        "type": "inject",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "e590ad779566e8c0"
+            ]
+        ]
+    },
+    {
+        "id": "2695ed6a20ab8371",
+        "type": "trigger",
+        "z": "7360d6e505308f72",
+        "name": "",
+        "op1": "Hi, Python!",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 160,
+        "y": 540,
+        "wires": [
+            [
+                "e590ad779566e8c0"
+            ]
+        ]
+    },
+    {
+        "id": "fc501e24e3d15edd",
+        "type": "function",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "func": "var vin = msg.payload;\nvar vout = (vin*3)-1.5;\nmsg.payload = (Math.round(vout*10000))/10000;\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 160,
+        "wires": [
+            [
+                "9ba4e9aa78d12b07",
+                "fa03926ac87a40c5"
+            ]
+        ]
+    },
+    {
+        "id": "9ba4e9aa78d12b07",
+        "type": "debug",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fa03926ac87a40c5",
+        "type": "ui_text",
+        "z": "4999169af1ef0c90",
+        "group": "20caa03d7048c04e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "vout",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 630,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c48d2e7dd653e880",
+        "type": "function",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "func": "var vin = msg.payload;\nvar vout = (vin*3)-1.5;\nvar temp = (vout*200/6)-50;\nmsg.payload = (Math.round(temp*10000))/10000;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 320,
+        "wires": [
+            [
+                "9f0c2f18d588c92c",
+                "b090a4b861428938"
+            ]
+        ]
+    },
+    {
+        "id": "9f0c2f18d588c92c",
+        "type": "ui_text",
+        "z": "4999169af1ef0c90",
+        "group": "20caa03d7048c04e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 650,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b090a4b861428938",
+        "type": "debug",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "768bba11e9e58edc",
+        "type": "ui_text_input",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "label": "vin",
+        "tooltip": "",
+        "group": "20caa03d7048c04e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "fc501e24e3d15edd",
+                "c48d2e7dd653e880"
+            ]
+        ]
+    },
+    {
+        "id": "d3e67eb7c75cd1e9",
+        "type": "comment",
+        "z": "4999169af1ef0c90",
+        "name": "Convert Vin to Vout, Temp",
+        "info": "Vin : 4mA to 20mA -> 0.5V to 2.5V\nVout : 1.5V to 7.5V (Gain of 3V/V) and Offset -1.5V\n     --> 0 to 6V\n     \nTemp : -50 to 150 degree ",
+        "x": 210,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fc333c294ed9678d",
+        "type": "ui_text_input",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "label": "vout",
+        "tooltip": "",
+        "group": "28271ca49c477b3e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "655e225aa53e6cff"
+            ]
+        ]
+    },
+    {
+        "id": "d1d7e88a29f1f1bc",
+        "type": "ui_text",
+        "z": "4999169af1ef0c90",
+        "group": "28271ca49c477b3e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 570,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "655e225aa53e6cff",
+        "type": "function",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "func": "var vout3 = msg.payload;\nvar temp2 = (vout3*200/6)-50;\nmsg.payload = (Math.round(temp2*10000))/10000; \n//msg.payload = Math.round(temp2); \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 440,
+        "wires": [
+            [
+                "d1d7e88a29f1f1bc"
+            ]
+        ]
+    },
+    {
+        "id": "e2717aec324a6655",
+        "type": "comment",
+        "z": "4999169af1ef0c90",
+        "name": "Convert for LM335",
+        "info": "V_LM335 = (273+T) / 100\n\nVin : 2.73V to 3.43V ( 0 to 70 deg )\nVout_scc = 0 TO 6V\n\n--> 0 to 70 deg > 0 to 6V\nTemp = Vout * (70 / 6.0)\n\n",
+        "x": 190,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "34f56c5ee7c44c96",
+        "type": "ui_text_input",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "label": "Vout_LM",
+        "tooltip": "",
+        "group": "ac6d6b5ec8e19041",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 260,
+        "y": 580,
+        "wires": [
+            [
+                "c5ea6c91f4982810"
+            ]
+        ]
+    },
+    {
+        "id": "c5ea6c91f4982810",
+        "type": "function",
+        "z": "4999169af1ef0c90",
+        "name": "",
+        "func": "var vout_LM = msg.payload;\nvar temp3 = (vout_LM*70/6);\nmsg.payload = (Math.round(temp3*10000))/10000; \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 580,
+        "wires": [
+            [
+                "55bfa7e4be5a620e"
+            ]
+        ]
+    },
+    {
+        "id": "55bfa7e4be5a620e",
+        "type": "ui_text",
+        "z": "4999169af1ef0c90",
+        "group": "ac6d6b5ec8e19041",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 570,
+        "y": 580,
+        "wires": []
+    }
+]
